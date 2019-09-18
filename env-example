@@ -1,0 +1,23 @@
+###########################################################
+###################### Shdowsocks-libev Setup #############
+###########################################################
+
+#
+# Shadowsocks Container name
+#
+CONTAINER_SS_NAME=shadowsockslibev
+
+#
+# PORT expose external
+#
+SS_HOST_PORT=8388
+
+# 
+# Encryption method
+#
+SS_METHOD=aes-256-gcm
+
+#
+# Password used for encryption
+#
+SS_PASSWORD=yoursecret

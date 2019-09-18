@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  shadowsocks:
+    container_name: ${CONTAINER_SS_NAME}
+    image: shadowsocks/shadowsocks-libev
+    restart: always
+    ports:
+      - "${SS_HOST_PORT}:8388/tcp"
+      - "${SS_HOST_PORT}:8388/udp"
+    environment:
+      - METHOD=${SS_METHOD}
+      - PASSWORD=${SS_PASSWORD}
